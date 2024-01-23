@@ -1,0 +1,6 @@
+<h1>Here are your movie categories:</h1>
+<ul><% @lists.each do |list| %>
+<li><%= link_to list.name, list_path(list) %></li>
+<% end %></ul>
+<h4><%= link_to "add a new list", new_list_path %></h4>
+<h4><%= link_to "see bookmarks", bookmarks_path %></h4>
