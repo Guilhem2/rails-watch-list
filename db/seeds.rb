@@ -22,3 +22,18 @@ file = URI.open("https://image.tmdb.org/t/p/original/8UlWHLMpgZm9bx6QYh0NFoq67TZ
 list = List.new(name: "Super hero")
 list.photo.attach(io: file, filename: "super_hero.png", content_type: "image/png")
 list.save
+
+file = URI.open("https://image.tmdb.org/t/p/original/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg")
+list = List.new(name: "Super hero")
+list.photo.attach(io: file, filename: "super_hero.png", content_type: "image/png")
+list.save
+
+file = URI.open("https://image.tmdb.org/t/p/original/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg")
+list = List.new(name: "Super hero")
+list.photo.attach(io: file, filename: "super_hero.png", content_type: "image/png")
+list.save
+
+file = URI.open("https://image.tmdb.org/t/p/original/MvYpKlpFukTivnlBhizGbkAe3v.jpg")
+list = List.new(name: "Super hero")
+list.photo.attach(io: file, filename: "super_hero.png", content_type: "image/png")
+list.save
