@@ -18,7 +18,7 @@ Movie.create(title: "Ocean's Eight", overview: "Debbie Ocean, a criminal masterm
 
 require "open-uri"
 
-file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/NES-Console-Set.jpg/1200px-NES-Console-Set.jpg")
-list = List.new(name: "NES")
-list.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
+file = URI.open("https://image.tmdb.org/t/p/original/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg")
+list = List.new(name: "Super hero")
+list.photo.attach(io: file, filename: "super_hero.png", content_type: "image/png")
 list.save
