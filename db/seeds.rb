@@ -19,21 +19,21 @@ Movie.create(title: "Ocean's Eight", overview: "Debbie Ocean, a criminal masterm
 require "open-uri"
 
 file = URI.open("https://image.tmdb.org/t/p/original/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg")
-list = List.new(name: "Super hero")
-list.photo.attach(io: file, filename: "super_hero.png", content_type: "image/png")
-list.save
+super_hero = List.new(name: "Super hero")
+super_hero.photo.attach(io: file, filename: "super_hero.png", content_type: "image/png")
+super_hero.save
 
 file = URI.open("https://image.tmdb.org/t/p/original/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg")
-list = List.new(name: "Super hero")
-list.photo.attach(io: file, filename: "super_hero.png", content_type: "image/png")
-list.save
+fantastic = List.new(name: "Fantastic")
+fantastic.photo.attach(io: file, filename: "super_hero.png", content_type: "image/png")
+fantastic.save
 
 file = URI.open("https://image.tmdb.org/t/p/original/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg")
-list = List.new(name: "Super hero")
-list.photo.attach(io: file, filename: "super_hero.png", content_type: "image/png")
-list.save
+drama = List.new(name: "Drama")
+drama.photo.attach(io: file, filename: "super_hero.png", content_type: "image/png")
+drama.save
 
 file = URI.open("https://image.tmdb.org/t/p/original/MvYpKlpFukTivnlBhizGbkAe3v.jpg")
-list = List.new(name: "Super hero")
-list.photo.attach(io: file, filename: "super_hero.png", content_type: "image/png")
-list.save
+heist = List.new(name: "Heist")
+heist.photo.attach(io: file, filename: "super_hero.png", content_type: "image/png")
+heist.save
