@@ -1,4 +1,4 @@
-<h1><%= @list.name %></h1>
+<h1><%= cl_image_tag @article.photo.key, height: 300, width: 400, crop: :fill %><%= @list.name %></h1>
 <ul><% @movies.each do |movie| %>
 <li><%= movie.title %></li>
 <% end %>
